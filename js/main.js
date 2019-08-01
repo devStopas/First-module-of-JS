@@ -1,28 +1,35 @@
-console.log('hellow word from file')
-console.log(17 * 12 * 30)
+/* var diameter = 10
+const Radius = diameter / 2
+const Pi = 3.1416
 
-/* TENEMOS UNA MEMORIA DE 4 GB CUANTAS FOTOS CABEN*/
+  console.log (Pi * Radius ** 2)
 
-var memori = 1024 /* gb */
-var capacity = 4 
-var image = 3 
+var numberOne = 12
+var numberTwo = -10
 
-console.log(memori * capacity / image )
+if ((numberOne > 11) || (numberTwo > 11)){
+	console.log('uno de los dos es mayor a 11')
+} else if((numberOne <= 2) || (numberTwo < 2)) {
+	console.log('Uno de los dos es menor a 2');
+} else {
+  console.log('No se pudo');
+}
+ */
 
-/*TENEMOS 22 CUBICULOS EN CADA CUBICULO PODEMOS METER 3 CARROS Y 2 CAMIONETAS 
-  - CUANTOS CUBICULOS LLENAMOS COMPLETOS 
-  - CUANTAS CAMIONETAS SOBRAN
-  - CUANTOS CARROS SOBRAN
+var diameter = 10
+const Radius = diameter / 2
+const Pi = 3.1416
 
-camionetas = 57
-carros = 130
-*/
+  console.log (Pi * Radius ** 2)
 
-var cars = 130
-var carsInside = 3
-var trucks = 57
-var trucksInside = 2
-var cubicles = 22
+//Aquí empieza el segundo c://
 
-console.log(cars - carsInside * cubicles )
-console.log(trucks -trucksInside * cubicles) 
+var number = 1
+
+if(typeof number === 'string'){
+  console.log('No es numero muchach@ c:')
+}else if(number % 2 === 0){
+  console.log(number, 'Es par')    
+}else{
+  console.log(number, 'Es inpar')
+}
