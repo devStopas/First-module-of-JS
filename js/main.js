@@ -1,13 +1,13 @@
-var name = "rotceH"
-var index = 5
-var normalicedName = ''
-
-do{
-  normalicedName = normalicedName + name[index]
-    index-- 
-} while (index >= 0)
-
-console.log (normalicedName)
+//var name = "rotceH"
+//var index = 5
+//var normalicedName = ''
+//
+//do{
+//  normalicedName = normalicedName + name[index]
+//    index-- 
+//} while (index >= 0)
+//
+//console.log (normalicedName)
 
 
 /*  
@@ -20,14 +20,23 @@ L    I
 6 - (0 + 1) = 5 - r
 */
 
-var world = 'Alejandro'
-var arrayOfVowels = ['a', 'e', 'i', 'o', 'u']
+//COMO SABER SI UNA PALABRA TIENE MAS DE 3 VOCALES C: 
 
-for(let i = 0; i < world.length; i++ ){
-  console.log(i)
+var word = 'Palabra'
+const VOWELS = ['a', 'e', 'i', 'o', 'u']
+var vowelsCounter = 0
+
+for (let wordIndex = 0; wordIndex < word.length; wordIndex++) {
+    let currentLetter = word[wordIndex]
+    for (let vowelIndex = 0; vowelIndex < VOWELS.length; vowelIndex++) {
+        if (currentLetter === VOWELS[vowelIndex]) {
+            vowelsCounter++
+        }
+    }
 }
 
-/*if ((world[0]) === arrayOfVowels){
-  console.log('')
-}*/
-
+if (vowelsCounter >= 3) {
+    console.log(`Tiene ${vowelsCounter} vocales`);
+} else {
+    console.error('Tiene muy pocas vocales');
+}
