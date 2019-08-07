@@ -1,42 +1,43 @@
-//var name = "rotceH"
-//var index = 5
-//var normalicedName = ''
-//
-//do{
-//  normalicedName = normalicedName + name[index]
-//    index-- 
-//} while (index >= 0)
-//
-//console.log (normalicedName)
+
+function subtraction(numberOne, numberTwo) {
+  return numberTwo - numberOne
+ }
+  ​
+const calculator = function() {
+  let operator = '-'
+  let total = Number()
+  if (operator === '-') {
+    total = subtraction(1, 2)
+    console.log(`La resta es: ${total}`);
+  } else if (operator === '+') {
+    total = addition(1, 2)
+    console.log(`La suma es: ${total}`);
+  } else {
+    console.error('Operador no soportado');
+  }
+  return undefined
+}
+  ​
+var total = calculator(4,5,"-")
 
 
-/*  
-L    I   
-6 - (5 + 1) = 0 - H
-6 - (4 + 1) = 1 - e
-6 - (3 + 1) = 2 - c
-6 - (2 + 1) = 3 - t
-6 - (1 + 1) = 4 - o
-6 - (0 + 1) = 5 - r
-*/
+// 'Holi a todos'
+// ['Holi','a','todos']
+// 1-Holi 2-a 3-todos 
+// 1-H      2-A     3-T
+// 1-Hola   2-A     3-Todos
+// ['Holi','A','Todos']
+// 'Holi A Todos'
 
-//COMO SABER SI UNA PALABRA TIENE MAS DE 3 VOCALES C: 
-
-var word = 'Palabra'
-const VOWELS = ['a', 'e', 'i', 'o', 'u']
-var vowelsCounter = 0
-
-for (let wordIndex = 0; wordIndex < word.length; wordIndex++) {
-    let currentLetter = word[wordIndex]
-    for (let vowelIndex = 0; vowelIndex < VOWELS.length; vowelIndex++) {
-        if (currentLetter === VOWELS[vowelIndex]) {
-            vowelsCounter++
-        }
-    }
+const capitalize = function (phrase) {
+  let wordArray = phrase.split(' ')
+  for (index in wordArray) {
+      let word = wordArray[index]
+      let letterCapitalize = word[0].toUpperCase()
+      let wordCapitalize = `${letterCapitalize}${word.slice(1)}`
+      wordArray[index] = wordCapitalize
+  }
+  return wordArray.join(' ')
 }
 
-if (vowelsCounter >= 3) {
-    console.log(`Tiene ${vowelsCounter} vocales`);
-} else {
-    console.error('Tiene muy pocas vocales');
-}
+console.log()
