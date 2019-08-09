@@ -1,35 +1,24 @@
-/* var diameter = 10
-const Radius = diameter / 2
-const Pi = 3.1416
+//let numbers = [1,2,3,4,5,6,7,8,9,]
 
-  console.log (Pi * Radius ** 2)
+//numbers.map((numbers) => console.log(numbers % 2 === 0))
 
-var numberOne = 12
-var numberTwo = -10
+//numbers.forEach(item => {
+//  (item % 2 === 0) ? console.log('Es par') : console.log('No es par')
+//})
 
-if ((numberOne > 11) || (numberTwo > 11)){
-	console.log('uno de los dos es mayor a 11')
-} else if((numberOne <= 2) || (numberTwo < 2)) {
-	console.log('Uno de los dos es menor a 2');
-} else {
-  console.log('No se pudo');
-}
- */
+let phrase = ['avion','casa','Arturo','nop','lol','perro',]
+let result = phrase.filter((phrase) => phrase[0] == 'a' || phrase[0] == 'A')
 
-var diameter = 10
-const Radius = diameter / 2
-const Pi = 3.1416
+console.log(result)
 
-  console.log (Pi * Radius ** 2)
+//Retornar el total de cada uno de los elementos del {array} al cuadrado
+let numbers = [1,2,3,4,5]
 
-//Aquí empieza el segundo c://
+// inline
+[2,2,3,4,5].reduce((initial, current) =>  initial + current**2, 0)
 
-var number = 1
-
-if(typeof number === 'string'){
-  console.log('No es numero muchach@ c:')
-}else if(number % 2 === 0){
-  console.log(number, 'Es par')    
-}else{
-  console.log(number, 'Es inpar')
-}
+// explicit
+[2,2,3,4,5].reduce((initial, current) => {
+    console.log(initial, current**2)
+    return initial + current**2
+}, 0)   
