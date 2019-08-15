@@ -1,0 +1,10 @@
+.parent{
+  list-style: none;
+  background-color: blue;
+  margin: 1rem;
+  padding: 1rem;
+  color: red;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  text-align: center;
+  font-size: 18rem; 
+}

@@ -1,51 +1,38 @@
-var person = {
-    name: 'Thelma',
-    birthDate: '1996-14-11',
-    height: {
-      unit: 'cm',
-      value: '170'
-    },
-    weight: {
-      unit: 'kg',
-      value: '70'
-    },
-    curp: '',
-    get getHeight() {
-      return `${this.height.value} ${this.height.unit}`
-    },
-    set setCURP(curp) {
-      this.curp = curp.toUpperCase()
-    }
-  }
-  person.getHeight
-  person.setCURP = 'hsdahjkdsfhjkds'
-
-//Mi codigo no funcioal
-
-var Phone = {
-    brand : 'Samsung',
-    model : 'S9',
-    color : 'Res',
-    price : '$20,000',
-    memoryRam: '16 Gb',
-    memoryRom: '32 Gb',
-    camera: '56 mpx',
-    processor: '350MHz',
-    ziseScreen: '900px',
-    batery: {
-        mAh: 4000,
-
-    }
+var nodes = [
+  {
+    'tag': 'ul',
+    'children': [
+      {
+        'tag': 'li',
+        'text': 'enjoy'
+      },
+      {
+        'tag': 'li',
+        'text': 'otra'
+      }, {
+        'tag': 'li',
+        'text': 'cosa'
+      }, {
+        'tag': 'li',
+        'text': 'estudien!'
+      }
+    ]
+  },
+]
+const buildNodes = (nodes, parent) => {
+  nodes.forEach(({ tag, children }) => {
+    let nodeParent = document.createElement(tag)
+    children.forEach(({ tag, text }) => {
+      let node = document.createElement(tag)
+      let nodeText = document.createTextNode(text)
+      node.appendChild(nodeText)
+      nodeParent.appendChild(node)
+    })
+    parent.appendChild(nodeParent)
+    nodeParent.classList.add('parent')
+  });
 }
+const parent = document.getElementById('container')
+buildNodes(nodes, parent)
 
-//Funcon Constructora  //capitalize
 
-// Constructor function
-function Dog(breed, name, size) {
-    this.breed = breed
-    this.name = name
-    this.size = size
-   }
-   var firstDog = new Dog('Dash hound', 'Sr. Salchicha', 'S')
-
-function beer( )
