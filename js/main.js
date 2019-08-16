@@ -1,38 +1,21 @@
-var nodes = [
-  {
-    'tag': 'ul',
-    'children': [
-      {
-        'tag': 'li',
-        'text': 'enjoy'
-      },
-      {
-        'tag': 'li',
-        'text': 'otra'
-      }, {
-        'tag': 'li',
-        'text': 'cosa'
-      }, {
-        'tag': 'li',
-        'text': 'estudien!'
-      }
-    ]
-  },
-]
-const buildNodes = (nodes, parent) => {
-  nodes.forEach(({ tag, children }) => {
-    let nodeParent = document.createElement(tag)
-    children.forEach(({ tag, text }) => {
-      let node = document.createElement(tag)
-      let nodeText = document.createTextNode(text)
-      node.appendChild(nodeText)
-      nodeParent.appendChild(node)
-    })
-    parent.appendChild(nodeParent)
-    nodeParent.classList.add('parent')
-  });
-}
-const parent = document.getElementById('container')
-buildNodes(nodes, parent)
+// document
+//     .getElementsByTagName('button')[0]
+//     .addEventListener('click', function({target}) {
+//         // target.style.backgroundColor === 'peru' 
+//         // ? target.style.backgroundColor = 'white'
+//         // : target.style.backgroundColor = 'peru'
+//         console.log(e.target.style);
+//     })
 
+for (let i = 0; i <= i; i++){
+  document
+  .getElementsByClassName('someclass')[i]
+  .addEventListener('mouseover', (e) => {
+       e.target.style.backgroundColor = 'red' 
+       console.log(e)
+  })
+  
+}
+
+const changeColor({style}) => styler.color === 'red' ? 'blue' : 'red'
 
